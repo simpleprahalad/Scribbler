@@ -28,8 +28,8 @@
         </div>
 
         <div class="post-btn">
-            <button type="button" class="yellow-button">All Posts</button>
-            <button type="button" class="yellow-button">Create Post</button>
+            <button type="button" class="yellow-button" onclick="navigateToBlogPost()">All Posts</button>
+            <button type="button" class="yellow-button" onclick="showCreatePostModal()">Create Post</button>
         </div>
     </div>
 
@@ -79,6 +79,26 @@
                 <span onclick="handleSignUpClick()" class=signup>Sign Up
                 </span>
             </p>
+        </div>
+    </div>
+
+    <!-- Create Post Modal -->
+    <div id="create-post-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span onclick="hideCreatePostModal()"" class="close">&times;</span>
+                <h2>Pen Your Post</h2>
+            </div>
+            <hr/>
+            <form>
+                <label for="title" class="label-text">Title</label>
+                <input type="text" id="title" placeholder="Enter title of your post" required>
+                <label for="contents" class="label-text">Conents</label>
+                <textarea rows="4" cols="50" id="contents" placeholder="Enter the contents of your post"></textarea>
+                <button type="submit" onclick="createPost()" class="green-btn">Create</button>
+            </form>
         </div>
     </div>
 

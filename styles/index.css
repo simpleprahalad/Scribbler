@@ -64,6 +64,14 @@ input {
     font-weight: bold;
 }
 
+textarea {
+    border: none;
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 12px;
+}
+
 input:focus {
     outline: 1px solid blue;  
 }
