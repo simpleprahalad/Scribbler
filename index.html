@@ -14,20 +14,29 @@
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
-    <div class="header">
-        <div class="title-container">
-            <div class="title">ScriBBler</div>
-            <p class="sub-title">Explore,  Imagine,  Create</p>
+    <div id="main-container">
+        <div class="header">
+            <div class="title-container">
+                <div class="title">ScriBBler</div>
+                <p class="sub-title">Explore,  Imagine,  Create</p>
+            </div>
+
+            <div class="btn-container">
+                <button class="blue-button" onclick="showSignUpModal()">Sign Up</button>
+                <button class="blue-button" onclick="showSignInModal()">Sign In</button>
+            </div>
         </div>
-        <div class="btn-container">
-            <button class="blue-button" onclick="showSignUpModal()">Sign Up</button>
-            <button class="blue-button" onclick="showSignInModal()">Sign In</button>
+
+        <div class="post-btn">
+            <button type="button" class="yellow-button">All Posts</button>
+            <button type="button" class="yellow-button">Create Post</button>
         </div>
     </div>
 
+
+
     <!-- Signup Modal -->
     <div id="signup-modal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
