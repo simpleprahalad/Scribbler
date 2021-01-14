@@ -39,7 +39,7 @@ html{
     color:white;
 }
 
-body {
+.body-bg {
     background: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;

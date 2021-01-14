@@ -38,7 +38,7 @@ function handleSignUpClick() {
 }
 
 function navigateToBlogPost() {
-    location.href = "html/bloglist.html"
+    location.href = "html/postslist.html"
 }
 
 
