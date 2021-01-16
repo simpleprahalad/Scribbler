@@ -13,82 +13,78 @@
 }
 
 .all-posts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.grid-header {
-    grid-area: hd;
-    color: gray;
-    font-size: 20px;
-    margin: 20px 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.grid-sidebar {
-    grid-area: sd;
+.post-item {
+    background-color: lightgray;
+    border-radius: 15px;
+    margin: 30px 0;
+    width: 40%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+}
+
+.post-item:hover{
+    box-shadow: 2px 4px grey;
+}
+
+.post-name {
     background-color: white;
     color: gray;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    height: 170px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
 }
 
-.grid-content {
-    grid-area: main;
-    margin: 15px 20px;
-    height: 58px;
+.post-body {
+    padding: 10px 20px;
+}
+
+.post-title {
+    color: gray;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    font-size: 16px;
     overflow: hidden;
+    height: 3.6em;
+
 }
 
-.grid-footer {
-    grid-area: ft
+.post-footer {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .trash-icon {
-    display: flex;
-    flex-direction: row-reverse;
     font-size: 24px;
     cursor: pointer;
 }
 
 .eplisis-icon {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 20px;
     font-size: 24px;
 }
-
-.card-item {
-    background-color: lightgray;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-auto-rows: minmax(50px, auto);
-    grid-template-areas:
-      "sd sd hd hd   hd   hd   hd   hd   hd"
-      "sd sd main main main main main main main"
-      "sd sd ft ft   ft   ft   ft   ft   ft";
-    margin: 30px;
-    border-radius: 20px;
-    height: 170px;
-}
-
-.card-item:hover{
-    box-shadow: 5px 10px grey;
-}
-
 
 .delete-post-btn {
     display: flex;
     justify-content: space-between;
     margin: 10px;
 }
-
 
 .yes-btn {
     background-color: green;
