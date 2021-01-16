@@ -8,11 +8,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/index.css" />
     <!-- TODO: Include Font Awesome file here -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- TODO: Include Google Fonts file here -->
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body-bg">
     <!-- TODO: Include all your code for the header and home page here -->
     <div id="main-container">
         <div class="header">
@@ -95,7 +96,7 @@
             <form>
                 <label for="title" class="label-text">Title</label>
                 <input type="text" id="title" placeholder="Enter title of your post" required>
-                <label for="contents" class="label-text">Conents</label>
+                <label for="contents" class="label-text">Contents</label>
                 <textarea rows="4" cols="50" id="contents" placeholder="Enter the contents of your post"></textarea>
                 <button type="submit" onclick="createPost()" class="green-btn">Create</button>
             </form>

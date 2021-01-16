@@ -38,7 +38,7 @@ function handleSignUpClick() {
 }
 
 function navigateToBlogPost() {
-    location.href = "html/bloglist.html"
+    location.href = "html/postslist.html"
 }
 
 
@@ -58,4 +58,3 @@ function hideCreatePostModal() {
     var modal = document.getElementById("create-post-modal");
     modal.style.display = "none";
 }
-
