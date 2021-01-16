@@ -33,7 +33,7 @@
     box-shadow: 2px 4px grey;
 }
 
-.post-name {
+.post-author {
     background-color: white;
     color: gray;
     font-weight: bold;
@@ -63,7 +63,6 @@
     font-size: 16px;
     overflow: hidden;
     height: 3.6em;
-
 }
 
 .post-footer {
@@ -74,6 +73,7 @@
 .trash-icon {
     font-size: 24px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .eplisis-icon {

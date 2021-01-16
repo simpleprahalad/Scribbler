@@ -7,19 +7,17 @@
     <!-- TODO: Include Google Fonts file here -->
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="../styles/common.css" />
+    <link rel="stylesheet" ̥ media="screen" href="../styles/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/postslist.css" />
 </head>
 
 <body class="body-bg">
-    <!-- TODO: Include code for header here -->
     <div>
         <div class="header">
             <div class="title-container">
                 <div class="title">ScriBBler</div>
                 <p class="sub-title">Explore,  Imagine,  Create</p>
             </div>
-
             <div class="btn-container">
                 <button class="blue-button" onclick="showSignUpModal()">Sign Up</button>
                 <button class="blue-button" onclick="showSignInModal()">Sign In</button>
@@ -27,138 +25,8 @@
         </div>
     </div>
 
-    <!-- ATTENTION: The HTML code for the list of posts has been given to you. 
-        You can feel free to add/delete/modify this code. 
-        You need to write the proper CSS and JavaScript code corresponding to this 
-        page so that the result looks like the screenshots given to you in the Project Statement. -->
-
-    <!-- list of all posts starts here -->
     <div class="all-posts" id="posts-list">
-
-        <!-- post 1 starts here -->
-        <div class="post-item">
-            <div class="post-name">
-                Srishti Gupta
-            </div>
-            <div class="post-body">
-                <div class="post-title">
-                    ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
-                    <i class="fa fa-trash trash-icon" onclick="showDeletePost()"></i>
-                </div>
-                <div class="post-content">
-                    Since JavaScript does not have any type-checking, 
-                    either of these keywords can be used to declare a 
-                    variable of any type (datatype) in JavaScript. 
-                    Though all the three keywords are used for the same purpose, they are different.
-                    Since JavaScript does not have any type-checking, 
-                    either of these keywords can be used to declare a 
-                    variable of any type (datatype) in JavaScript. 
-                    Though all the three keywords are used for the same purpose, they are different.
-                </div>
-                <div class="post-footer">
-                    <i class="fa fa-ellipsis-h eplisis-icon" onclick="showMorePost()"></i>
-                </div>
-            </div>
-        </div>
-        <!-- post 1 ends here -->
-
-
-        <!-- post 2 starts here -->
-        <div class="post-item">
-            <div class="post-name">
-                Colby Fayock
-            </div>
-            <div class="post-body">
-                <div class="post-title">
-                    What is linting and how can it save you time?
-                    <i class="fa fa-trash trash-icon" onclick="showDeletePost()"></i>
-                </div>
-                <div class="post-content">
-                    One of the biggest challenges in software development is time. 
-                    It’s something we can’t easily get more of, but linting can help
-                    us make the most out of the time we have.
-                </div>
-                <div class="post-footer">
-                    <i class="fa fa-ellipsis-h eplisis-icon" onclick="showMorePost()"></i>
-                </div>
-            </div>
-        </div>
-        <!-- post 2 ends here -->
-
-        <!-- post 3 starts here -->
-        <div class="post-item">
-            <div class="post-name">
-                Yazeed Bzadough
-            </div>
-            <div class="post-body">
-                <div class="post-title">
-                    How to Get More Views on Your Tech Blog
-                    <i class="fa fa-trash trash-icon" onclick="showDeletePost()"></i>
-                </div>
-
-                <div class="post-content">
-                    If you're a developer with a Twitter account, you've already seen 
-                    everyone and their cat start a blog, YouTube channel, or Patreon.
-                    We all want to become stars, or at the very least, a recognizable name in the industry.
-                </div>
-                <div class="post-footer">
-                    <i class="fa fa-ellipsis-h eplisis-icon" onclick="showMorePost()"></i>
-                </div>
-            </div>
-        </div>
-        <!-- post 3 ends here -->
-
-        <!-- post 4 starts here -->
-        <div class="post-item">
-            <div class="post-name">
-                Cedd Burge
-            </div>
-            <div class="post-body">
-                <div class="post-title">
-                    How to write easily describable code
-                    <i class="fa fa-trash trash-icon" onclick="showDeletePost()"></i>
-                </div>
-
-                <div class="post-content">
-                    When code is not describable using words, most people have 
-                    to do some mental mapping to turn it in to words. 
-                    This wastes mental energy, and you run the risk of getting 
-                    the mapping wrong. Different people will map to different words,
-                    which leads to confusion when discussing the code.
-                </div>
-                <div class="post-footer">
-                    <i class="fa fa-ellipsis-h eplisis-icon" onclick="showMorePost()"></i>
-                </div>
-            </div>
-        </div>
-        <!-- post 4 ends here -->
-
-        <!-- post 5 starts here -->
-        <div class="post-item">
-            <div class="post-name">
-                Srishti Gupta
-            </div>
-            <div class="post-body">
-                <div class="post-title">
-                    Everything you should know about ‘module’ & ‘require’ in Node.js
-                    <i class="fa fa-trash trash-icon" onclick="showDeletePost()"></i>
-                </div>
-
-                <div class="post-content">
-                    Node.js treats each JavaScript file as a separate module. 
-                    For instance, if you have a file containing some code and 
-                    this file is named xyz.js, then this file is treated as a 
-                    module in Node, and you can say that you’ve created a module
-                    named xyz.
-                </div>
-                <div class="post-footer">
-                    <i class="fa fa-ellipsis-h eplisis-icon" onclick="showMorePost()"></i>
-                </div>
-            </div>
-        </div>
-        <!-- post 5 ends here -->
     </div>
-    <!-- list of all posts ends here -->
 
     <!-- TODO: Write code for delete post modal here -->
     <div id="delete-post-modal" class="modal">
