@@ -71,7 +71,6 @@ function showPosts() {
 }
 
 function showDeletePost(id) {
-
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {
@@ -94,6 +93,12 @@ function handleNoDeletePost() {
     modal.style.display = "none";
 }
 
-function showMorePost() {
-    location.href = "post.html"
+function showMorePost(id) {
+    deletePostId = id;
+    console.log(id);
+    console.log(deletePostId);
+    var data = document.getElementById(id);
+    console.log(data);
+    location.href = "post.html";
+    // sessionStorage.setItem();
 }

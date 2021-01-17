@@ -1,4 +1,78 @@
 <!DOCTYPE html>
 <html>
     
-</html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+        <link rel="stylesheet" ̥ media="screen" href="../styles/common.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../styles/post.css" />
+        <script src="../scripts/common.js"></script>
+    </head>
+
+    <body class="body-bg" onload="generateHeader()">
+
+        <!-- Page Header -->
+        <div id="page-header"></div>
+        <!-- SignUp Modal -->
+        <div id="signup-modal" class="modal"></div>
+        <!-- SignIn Modal -->
+        <div id="signin-modal" class="modal"></div>
+
+
+        <!-- Page Body -->
+        <div class="post-main-layout">
+            <div class="post-title" id="post-title" contenteditable="false">
+                    When emotions Trump reason: Indians should pay heed 
+                    to lessons of US Capitol attack, when unchecked emotions erupted
+            </div>
+
+            <div class="post-author-container">
+                <div class="post-author">Prahalad Maheswari</div>
+                <button class="post-edit" id="post-edit" onclick="toggleEditSaveButton()">Edit
+                    <i style="font-size: 14px;" class="fa fa-edit" id="edit-save-icon"></i>
+                </button>
+            </div>
+    
+            <div class="post-body" id="post-body">
+                The frenzied mob that created a riot at the US Capitol building has a lesson for all 
+                of us emotion loving Indians. Don’t let your emotions rule you or take over your ability
+                to reason. Interestingly, this lesson is cited in the Bhagwad Gita, one of our ancient holy texts.
+                In what has to be one of the most bizarre episodes in modern world history, a mob consisting 
+                of a mix of Trump supporters, election fraud conspiracy theorists, far right activists and 
+                angry rioters stormed the US Capitol building on January 6. Thousands of protesters stormed 
+                through the building, disrupting a joint session of Congress. Many of them vandalised and destroyed property.
+                The Senate and House of Representatives had to be evacuated, the entire Capitol area had 
+                to be locked down. The fact that this happened in broad daylight, in a powerful and developed
+                 nation like the US, is what makes the entire episode truly bizarre.
+                The frenzied mob that created a riot at the US Capitol building has a lesson for all of 
+                us emotion loving Indians. Don’t let your emotions rule you or take over your ability to reason. 
+                Interestingly, this lesson is cited in the Bhagwad Gita, one of our ancient holy texts.
+                In what has to be one of the most bizarre episodes in modern world history, a mob consisting 
+                of a mix of Trump supporters, election fraud conspiracy theorists, far right activists and 
+                angry rioters stormed the US Capitol building on January 6. Thousands of protesters stormed 
+                through the building, disrupting a joint session of Congress. Many of them vandalised and destroyed property.
+                The Senate and House of Representatives had to be evacuated, the entire Capitol area had to be 
+                locked down. The fact that this happened in broad daylight, in a powerful and developed nation 
+                like the US, is what makes the entire episode truly bizarre.
+            </div>
+
+            <div>
+                <button id="like-post" onclick="postLiked()" class="like-post-btn">
+                    <i class="fa fa-thumbs-o-up" aria-hidden="true"> Like</i>
+                </button>
+            </div>
+            <span id="like-count" class="like-count-text">Be the first one to like this!</span>
+
+            <div class="comment-text-area">
+                <textarea rows="5" cols="120" placeholder="Leave a comment..." id="userComments" value=""></textarea>
+                <br>
+                <button id="add-comment" class="add-comment-btn" onclick="addComments()">Comment</button>
+            </div>
+
+            <div class="all-comments-text">All Comments</div>
+            <div id="add-comments-to-list" class="comment-text"></div>
+    </div>
+
+        <script src="../scripts/post.js"></script>
+    </body>
+</html> 
