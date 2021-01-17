@@ -9,21 +9,17 @@
 
     <link rel="stylesheet" ̥ media="screen" href="../styles/common.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/postslist.css" />
+    <script src="../scripts/common.js"></script>
 </head>
 
-<body class="body-bg">
-    <div>
-        <div class="header">
-            <div class="title-container">
-                <div class="title">ScriBBler</div>
-                <p class="sub-title">Explore,  Imagine,  Create</p>
-            </div>
-            <div class="btn-container">
-                <button class="blue-button" onclick="showSignUpModal()">Sign Up</button>
-                <button class="blue-button" onclick="showSignInModal()">Sign In</button>
-            </div>
-        </div>
-    </div>
+<body class="body-bg" onload="generateHeader()">
+
+        <!-- Page Header -->
+        <div id="page-header"></div>
+        <!-- SignUp Modal -->
+        <div id="signup-modal" class="modal"></div>
+        <!-- SignIn Modal -->
+        <div id="signin-modal" class="modal"></div>
 
     <div class="all-posts" id="posts-list">
     </div>
@@ -31,7 +27,7 @@
     <!-- TODO: Write code for delete post modal here -->
     <div id="delete-post-modal" class="modal">
         <!-- Modal content -->
-        <div class="modal-content">
+        <div class="delete-post-modal-content">
             <p style="margin-left: 20px;">Are you sure you want to delete this post?</p>
             <div class="delete-post-btn">
                 <button class="yes-btn" onclick="handleYesDeletePost()">Yes</button>

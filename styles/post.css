@@ -32,13 +32,15 @@
 
 .post-edit {
     color: white;
-    background-color: hotpink;
+    background-color: #ed2553;
     width: 5%;
     border: none;
     height: 30px;
     cursor: pointer;
     outline: none;
+    box-shadow: 0 6px 13px -3px black;
 }
+
 
 .post-body {
     text-align: justify;
@@ -49,12 +51,13 @@
     margin-top: 20px;
     margin-bottom: 4px;
     color: white;
-    background-color: hotpink;
+    background-color: #ed2553;
     width: 5%;
     border: none;
     height: 30px;
     cursor: pointer;
     outline: none;
+    box-shadow: 0 6px 13px -3px black;
 }
 
 .comment-text-area {
@@ -64,12 +67,13 @@
 .add-comment-btn {
     margin-top: 10px;
     color: white;
-    background-color: hotpink;
+    background-color: #ed2553;
     width: 7%;
     border: none;
     height: 30px;
     cursor: pointer;
     outline: none;
+    box-shadow: 0 6px 13px -3px black;
 }
 
 .like-count-text {

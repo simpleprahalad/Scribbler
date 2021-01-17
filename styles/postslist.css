@@ -24,13 +24,12 @@
     border-radius: 15px;
     margin: 30px 0;
     width: 40%;
-    height: 140px;
     display: flex;
     flex-direction: row;
 }
 
-.post-item:hover{
-    box-shadow: 2px 4px grey;
+.post-item:hover {
+    box-shadow: 5px 2px 20px -3px black;
 }
 
 .post-author {
@@ -66,8 +65,7 @@
 }
 
 .post-footer {
-    display: flex;
-    flex-direction: row-reverse;
+    float: right;
 }
 
 .trash-icon {
@@ -78,6 +76,8 @@
 
 .eplisis-icon {
     font-size: 24px;
+    color: gray;
+    cursor: pointer;
 }
 
 .delete-post-btn {
@@ -104,7 +104,12 @@
     font-size: 14px;
 }
 
-.modal-content {
+.delete-post-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 1px solid #888;
     width: 20%;
     margin-top: 15%;
 }
